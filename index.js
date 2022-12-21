@@ -18,9 +18,13 @@ function generateRandomPassword(len) {
 			password += characters[getRandomNumber()];
 		}
 		return password;
-	}else {
-    passLen.focus();
-  }
+	} else {
+		passLen.focus();
+	}
+}
+
+function clearInputField() {
+	passLen.value = "none";
 }
 
 generatePasswordBtn.addEventListener("click", (e) => {
@@ -31,6 +35,7 @@ generatePasswordBtn.addEventListener("click", (e) => {
 generatePasswordBtn.addEventListener("click", (e) => {
 	password2.textContent = generateRandomPassword(passLen.value);
 	password2.style.cursor = "pointer";
+	clearInputField();
 });
 
 function copyToClipBoard(password) {

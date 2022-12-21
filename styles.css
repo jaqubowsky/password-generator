@@ -62,7 +62,8 @@ span {
 	transition: all 1s;
 }
 
-#section #password-field .password:hover, .pass-len-el:hover {
+#section #password-field .password:hover,
+.pass-len-el:hover {
 	background-color: rgba(39, 53, 73, 1);
 	transform: scale(1.02);
 }
@@ -114,4 +115,10 @@ span {
 	margin: 20px 0;
 	transition: all 1s;
 	width: 150px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
