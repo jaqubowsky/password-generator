@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Karla", sans-serif;
+	font-size: 2rem;
+	background-color: #1f2937;
+}
+
+#section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  height: 70vh;
+}
+
+#section .wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	max-width: 950px;
+	max-height: 600px;
+	background-color: #1f2937;
+}
+
+#section #text-field {
+	margin-bottom: 50px;
+}
+
+#section #text-field h1 {
+	color: white;
+	line-height: 50px;
+	margin-bottom: 30px;
+}
+
+#section #text-field span {
+	color: #4adf86;
+}
+
+#section #text-field p {
+	color: #d5d4d8;
+}
+
+#section #password-field {
+	display: flex;
+	justify-content: space-around;
+}
+
+#section #password-field .password {
+	color: #55f991;
+	background-color: #273549;
+	border-radius: 8px;
+	padding: 5px 150px;
+	text-align: center;
+}
+
+#section #btns .btn {
+	background-color: #10b981;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 12px 18px;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+#section hr {
+	border: 1px solid #2f3e53;
+	width: 45vw;
+	margin: 30px 0;
+}
